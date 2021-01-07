@@ -6,8 +6,8 @@ FROM python:3.9-rc-buster
 # Setting Work directory for RUN CMD commands
 WORKDIR /code
 # Export env variables.
-ENV FLASK_APP app.py
-ENV FLASK_RUN_HOST 0.0.0.0
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
 ###
 
 
