@@ -18,8 +18,10 @@ services:
     # Link database container to app container 
     # for rechability.
     links:
-      - "database:backenddb"
-    
+      - "database:backenddb"    
+    depends_on:
+      - database
+
   database:
     context: ./db
     dockerfile: Dockerfile-db
