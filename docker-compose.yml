@@ -21,6 +21,8 @@ services:
       - "database:backenddb"
     
   database:
+    context: ./db
+    dockerfile: Dockerfile-db
 
     # image to fetch from docker hub
     image: mysql/mysql-server:5.7
